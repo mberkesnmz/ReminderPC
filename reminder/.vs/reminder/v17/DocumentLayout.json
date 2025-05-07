@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gaming\\Desktop\\reminder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\themes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\themes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\themehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\themehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\addreminderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\addreminderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\settingsstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\settingsstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\addreminderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\addreminderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|c:\\users\\gaming\\desktop\\reminder\\reminder\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\completedsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\completedsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\reminderstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\reminderstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\completedsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\completedsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7D6FCC-390E-4F07-9076-852042D4A5A2}|reminder\\reminder.csproj|solutionrelative:reminder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Themes.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Themes.cs",
+              "RelativeDocumentMoniker": "reminder\\Themes.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Themes.cs",
+              "RelativeToolTip": "reminder\\Themes.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAIAwwEcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:56:56.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Theme.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Theme.cs",
+              "RelativeDocumentMoniker": "reminder\\Theme.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Theme.cs",
+              "RelativeToolTip": "reminder\\Theme.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:13:24.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettingsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "reminder\\SettingsForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsForm.cs [Design]",
+              "RelativeToolTip": "reminder\\SettingsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:37:53.677Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "reminder\\SettingsForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsForm.cs",
+              "RelativeToolTip": "reminder\\SettingsForm.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAIAwwFQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T10:49:29.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddReminderForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddReminderForm.cs",
+              "RelativeDocumentMoniker": "reminder\\AddReminderForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddReminderForm.cs [Design]",
+              "RelativeToolTip": "reminder\\AddReminderForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T12:07:10.492Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SettingsStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsStorage.cs",
+              "RelativeDocumentMoniker": "reminder\\SettingsStorage.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\SettingsStorage.cs",
+              "RelativeToolTip": "reminder\\SettingsStorage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:20:59.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddReminderForm.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddReminderForm.cs",
+              "RelativeDocumentMoniker": "reminder\\AddReminderForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddReminderForm.cs",
+              "RelativeToolTip": "reminder\\AddReminderForm.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAMwG4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T15:02:59.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThemeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ThemeHelper.cs",
+              "RelativeDocumentMoniker": "reminder\\ThemeHelper.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ThemeHelper.cs",
+              "RelativeToolTip": "reminder\\ThemeHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:30:03.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThemeManager.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ThemeManager.cs",
+              "RelativeDocumentMoniker": "reminder\\ThemeManager.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ThemeManager.cs",
+              "RelativeToolTip": "reminder\\ThemeManager.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:20:36.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AppSettings.cs",
+              "RelativeDocumentMoniker": "reminder\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AppSettings.cs",
+              "RelativeToolTip": "reminder\\AppSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T12:21:38.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CompletedsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\CompletedsForm.cs",
+              "RelativeDocumentMoniker": "reminder\\CompletedsForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\CompletedsForm.cs [Design]",
+              "RelativeToolTip": "reminder\\CompletedsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T21:31:18.414Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReminderStorage.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ReminderStorage.cs",
+              "RelativeDocumentMoniker": "reminder\\ReminderStorage.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\ReminderStorage.cs",
+              "RelativeToolTip": "reminder\\ReminderStorage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:02:07.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CompletedsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\CompletedsForm.cs",
+              "RelativeDocumentMoniker": "reminder\\CompletedsForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\CompletedsForm.cs",
+              "RelativeToolTip": "reminder\\CompletedsForm.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAPYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T21:36:21.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Reminder.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Reminder.cs",
+              "RelativeDocumentMoniker": "reminder\\Reminder.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Reminder.cs",
+              "RelativeToolTip": "reminder\\Reminder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T18:01:27.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AddForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddForm.cs",
+              "RelativeDocumentMoniker": "reminder\\AddForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddForm.cs [Design]",
+              "RelativeToolTip": "reminder\\AddForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T15:13:04.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddForm.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddForm.cs",
+              "RelativeDocumentMoniker": "reminder\\AddForm.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\AddForm.cs",
+              "RelativeToolTip": "reminder\\AddForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T15:17:46.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Program.cs",
+              "RelativeDocumentMoniker": "reminder\\Program.cs",
+              "ToolTip": "C:\\Users\\Gaming\\Desktop\\reminder\\reminder\\Program.cs",
+              "RelativeToolTip": "reminder\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T15:01:04.863Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

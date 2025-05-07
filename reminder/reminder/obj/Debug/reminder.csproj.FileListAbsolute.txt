@@ -1,0 +1,17 @@
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\reminder.exe.config
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\reminder.exe
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\reminder.pdb
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\Guna.UI2.dll
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.csproj.AssemblyReference.cache
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.Properties.Resources.resources
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.csproj.GenerateResource.cache
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.csproj.CoreCompileInputs.cache
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.csproj.Up2Date
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.exe
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.pdb
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.AddForm.resources
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.AddReminderForm.resources
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gaming\Desktop\reminder\reminder\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.CompletedsForm.resources
+C:\Users\Gaming\Desktop\reminder\reminder\obj\Debug\reminder.SettingsForm.resources
