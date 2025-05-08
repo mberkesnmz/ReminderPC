@@ -49,8 +49,12 @@ namespace reminder
 
             ReminderStorage.UpdateCompletedReminders();
 
+            var settings = SettingsStorage.Load();
+            string themeName = settings.SelectedThemeName ?? "green_light"; // varsayılan tema
 
-            
+            // Tema adını kullanarak uygula
+            ThemeManager.ApplyTheme(themeName);
+
         }
 
         public void AddReminderToPanel(Reminder reminder)
@@ -110,7 +114,8 @@ namespace reminder
                 ShadowDecoration = { Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle },
                 ShowPercentage = false,
                 Value = CalculateProgress(reminder.DateTime),
-                Anchor = AnchorStyles.Top | AnchorStyles.Right
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                UseTransparentBackground = true,
             };
 
             // Tarih

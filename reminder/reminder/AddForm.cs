@@ -25,7 +25,11 @@ namespace reminder
 
             datePicker.Value = DateTime.Now;
 
-           
+            var settings = SettingsStorage.Load();
+            string themeName = settings.SelectedThemeName ?? "green_light"; // varsayılan tema
+
+            // Tema adını kullanarak uygula
+            ThemeManager.ApplyTheme(themeName);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -50,6 +54,11 @@ namespace reminder
             }
 
             this.Close(); // AddForm'u kapat
+        }
+
+        private void closebutton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

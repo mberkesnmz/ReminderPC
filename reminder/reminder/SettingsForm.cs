@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using Guna.UI2.WinForms;
+using System.IO;
 
 namespace reminder
 {
@@ -18,38 +19,68 @@ namespace reminder
         public SettingsForm()
         {
             InitializeComponent();
+            LoadCurrentSettings();
+            UpdateNotificationLabel();
+        }
 
+        private void LoadCurrentSettings()
+        {
+            // Ayarları yükle
+            var settings = SettingsStorage.Load();
+
+            // Seçilen ses dosyasını yükle ve butonun yanında göster
+            if (!string.IsNullOrEmpty(settings.NotificationSoundPath) && settings.NotificationSoundPath != "notification.wav")
+            {
+                lblNotificationSound.Text = Path.GetFileName(settings.NotificationSoundPath);
+            }
+            else
+            {
+                lblNotificationSound.Text = "notification.wav (Default)";
+            }
         }
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
-            // Mevcut tema ayarını yükle
             var settings = SettingsStorage.Load();
             string selectedThemeName = settings?.SelectedThemeName ?? "green_light";
-            Theme themeToApply = Themes.GetByName(selectedThemeName);
+            Theme selectedTheme = Themes.GetByName(selectedThemeName);
 
-            // Temayı uygula, tema butonlarını atla
-            ThemeHelper.ApplyTheme(this, themeToApply, skipThemeButtons: true);
+            ThemeManager.ApplyTheme(selectedThemeName);
 
-            // Tema butonlarını oluştur ve ekle
-            flowLayoutPanelThemes.Controls.Clear(); // Eski butonları temizle
+            flowLayoutPanelThemes.Controls.Clear();
 
             var themeButtons = new[]
             {
-                CreateThemeButton(Color.FromArgb(160, 200, 120), Color.FromArgb(221, 235, 157), "green_light"),
-                CreateThemeButton(Color.DeepSkyBlue, Color.LightBlue, "blue_light"),
-                CreateThemeButton(Color.MediumPurple, Color.Plum, "purple_light"),
-                CreateThemeButton(Color.FromArgb(139, 0, 0), Color.DarkRed, "red_dark"),
-                CreateThemeButton(Color.Black, Color.MidnightBlue, "green_dark")
+                CreateThemeButton(Color.White, Color.LightGreen, "green_light"),
+                CreateThemeButton(Color.White, Color.LightBlue, "blue_light"),
+                CreateThemeButton(Color.White, Color.Pink, "purple_light"),
+                CreateThemeButton(Color.Black, Color.DarkRed, "red_dark"),
+                CreateThemeButton(Color.Black, Color.DarkGreen, "green_dark")
             };
 
             foreach (var btn in themeButtons)
             {
-                btn.Tag = "theme_button"; // Tema butonu olduğunu işaretle
+                btn.AccessibleName = btn.Name = btn.Tag.ToString();
+                btn.Click += ThemeButton_Click;
+
+                if (btn.AccessibleName == selectedThemeName)
+                {
+                    btn.BorderThickness = 3;
+
+                    int avgColor = (btn.FillColor.R + btn.FillColor.G + btn.FillColor.B) / 3;
+                    btn.BorderColor = avgColor > 180 ? Color.Black : Color.White;
+
+                    btn.Width = btn.Height = 70; // Seçili buton daha büyük
+                }
+                else
+                {
+                    btn.BorderThickness = 0;
+                    btn.Width = btn.Height = 55; // Normal boyut
+                }
+
                 flowLayoutPanelThemes.Controls.Add(btn);
             }
         }
-
 
 
         private void closebutton_Click(object sender, EventArgs e)
@@ -61,42 +92,115 @@ namespace reminder
         {
             var btn = new Guna2GradientCircleButton
             {
-                Width = 40,
-                Height = 40,
+                Width = 50,
+                Height = 50,
                 FillColor = color1,
                 FillColor2 = color2,
                 Tag = tag,
                 Margin = new Padding(10),
                 Cursor = Cursors.Hand
             };
-            btn.Tag = "theme_button";
+            
             btn.Click += ThemeButton_Click;
             return btn;
         }
         private void ThemeButton_Click(object sender, EventArgs e)
         {
-            var btn = sender as Guna2GradientCircleButton;
-            string themeName = btn.Tag.ToString(); // Butonun tag'ine göre tema seçimi
-
-            // Tema değişimini yap
-            Theme selectedTheme = Themes.GetByName(themeName);
-            ThemeManager.ApplyThemeToAllForms(selectedTheme);
-
-            // Seçilen butona görsel değişiklik ekleyelim
-            foreach (var button in flowLayoutPanelThemes.Controls)
+            if (sender is Guna2GradientCircleButton btn)
             {
-                var themeButton = button as Guna2GradientCircleButton;
-                if (themeButton != null)
+                string themeName = btn.Tag.ToString();
+
+                ThemeManager.ApplyTheme(themeName);
+
+                ThemeHelper.ApplyTheme(this, ThemeManager.CurrentTheme, skipThemeButtons: true);
+
+                foreach (var button in flowLayoutPanelThemes.Controls.OfType<Guna2GradientCircleButton>())
                 {
-                    themeButton.FillColor = themeButton.Tag.ToString() == themeName
-                        ? Color.FromArgb(255, 255, 255)  // Seçilen butonun rengini değiştirebilirsiniz.
-                        : Color.FromArgb(160, 200, 120); // Diğer butonları eski renge döndürelim
+                    if (button == btn)
+                    {
+                        button.BorderThickness = 3;
+
+                        int avgColor = (button.FillColor.R + button.FillColor.G + button.FillColor.B) / 3;
+                        button.BorderColor = avgColor > 180 ? Color.Black : Color.White;
+
+                        // Seçili butonu büyüt
+                        button.Width = button.Height = 70; // Normalden biraz büyük
+                    }
+                    else
+                    {
+                        button.BorderThickness = 0;
+                        button.Width = button.Height = 55; // Normal boyut
+                    }
                 }
             }
-
-            // Temayı kaydedelim
-            SettingsStorage.Save(new AppSettings { SelectedThemeName = themeName });
         }
 
+        private void closebutton_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnChangeNotificationSound_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "WAV Files (*.wav)|*.wav|All Files (*.*)|*.*";
+                openFileDialog.Title = "Select a Notification Sound";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedPath = openFileDialog.FileName;
+
+                    if (!string.IsNullOrEmpty(selectedPath) && File.Exists(selectedPath))
+                    {
+                        // Ayarları yükle
+                        var settings = SettingsStorage.Load();
+
+                        // Seçilen dosya yolunu ayarlara yaz
+                        settings.NotificationSoundPath = selectedPath;
+
+                        // Ayarları kaydet
+                        SettingsStorage.Save(settings);
+
+                        // Label'ı güncelle
+                        UpdateNotificationLabel();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Seçilen dosya geçersiz.");
+                    }
+                }
+            }
+        }
+
+        private void btnUseDefaultSound_Click(object sender, EventArgs e)
+        {
+            // Varsayılan ses yolunu kaydet
+            var settings = SettingsStorage.Load();
+            settings.NotificationSoundPath = "notification.wav"; // Varsayılan ses
+            SettingsStorage.Save(settings);
+
+            // Etiketi güncelle
+            lblNotificationSound.Text = "notification.wav (Default)";
+        }
+
+        private void UpdateNotificationLabel()
+        {
+            var settings = SettingsStorage.Load();
+            string soundPath = settings?.NotificationSoundPath;
+
+            if (string.IsNullOrWhiteSpace(soundPath))
+            {
+                lblNotificationSound.Text = "notification.wav (Default)";
+                return;
+            }
+
+            string fileName = Path.GetFileName(soundPath);
+
+            if (fileName.Length > 35)
+                fileName = fileName.Substring(0, 35) + "...";
+
+            lblNotificationSound.Text = fileName;
+        }
     }
 }

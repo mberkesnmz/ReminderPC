@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace reminder
 {
@@ -47,8 +48,9 @@ namespace reminder
                 BorderStyle = BorderStyle.None,  // Kenarlık yok
                 AutoSize = false, // Manuel boyut
                
+                Tag= "no_theme"
 
-            };
+        };
 
             // Etiketi formun kontrollerine ekliyoruz
             this.Controls.Add(notificationLabel);
@@ -159,6 +161,7 @@ namespace reminder
                     if (Math.Abs((reminder.DateTime - now).TotalMinutes) < 1)
                     {
                         panel.FillColor = Color.LightGreen;
+
                         PlayNotificationSound();
                         AnimateShake(panel);
                         // Bir kere çalışsın diye tamamlandı gibi işaretleyebiliriz
@@ -173,7 +176,14 @@ namespace reminder
         {
             try
             {
-                using (SoundPlayer player = new SoundPlayer("notification.wav"))
+                var settings = SettingsStorage.Load();
+                string soundPath = settings.NotificationSoundPath;
+                if (string.IsNullOrEmpty(soundPath) || !File.Exists(soundPath))
+                {
+                    soundPath = "notification.wav";
+                }
+
+                using (SoundPlayer player = new SoundPlayer(soundPath))
                 {
                     player.Play();
                 }
@@ -252,6 +262,7 @@ namespace reminder
                 ProgressColor2 = Color.FromArgb(160, 200, 120),
                 FillColor = Color.WhiteSmoke,
                 BackColor = Color.Transparent,
+                UseTransparentBackground = true,
                 ShadowDecoration = { Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle },
                 ShowPercentage = false,
                 Value = CalculateProgress(reminder.DateTime),
@@ -353,6 +364,9 @@ namespace reminder
             panel.Controls.Add(lblRemaining);
 
             flowLayoutPanel1.Controls.Add(panel);
+
+            // Hemen temayı uygula
+            ThemeHelper.ApplyThemeToControl(panel, ThemeManager.CurrentTheme, skipThemeButtons: true);
 
             // Panelin yüksekliğini hesapla
             // Bu, öğelerin tüm yüksekliğini içerir (etiketler ve progress bar)

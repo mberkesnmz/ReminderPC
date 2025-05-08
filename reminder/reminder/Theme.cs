@@ -13,6 +13,9 @@ namespace reminder
         public Color SecondaryColor { get; set; }
         public Color BackgroundColor { get; set; }
         public Color ForegroundColor { get; set; }
+        public Color GradientButtonColor { get; set; }
+        public Color PanelTextColor { get; set; }
+        public Color PanelBackColor { get; set; }
 
         public string SettingsIconPath { get; set; }
         public string CheckmarkIconPath { get; set; }

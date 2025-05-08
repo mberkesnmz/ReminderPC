@@ -8,7 +8,13 @@ namespace reminder
 {
     public class AppSettings
     {
-        public string SelectedThemeName { get; set; } = "green_light"; // default
-        public string NotificationSoundPath { get; set; } = "notification.wav"; // gelecek adım için
+        public string SelectedThemeName { get; set; } = "green_light";
+
+        private string _notificationSoundPath = "notification.wav";
+        public string NotificationSoundPath
+        {
+            get => string.IsNullOrWhiteSpace(_notificationSoundPath) ? "notification.wav" : _notificationSoundPath;
+            set => _notificationSoundPath = value;
+        }
     }
 }
