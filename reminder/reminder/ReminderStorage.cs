@@ -5,26 +5,38 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 public static class ReminderStorage
 {
+    private static readonly string AppDataDir = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+        "ReminderApp");
+
+    private static readonly string FilePath = Path.Combine(AppDataDir, "reminders.json");
+    private static readonly string DefaultRemindersPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "reminders.json");
+
     // Tüm hatırlatıcıları döndüren fonksiyon
     public static List<Reminder> GetAll()
     {
-        return Load();  // JSON'dan tüm hatırlatıcıları al
+        return Load();
     }
-
-    private static readonly string FilePath = "reminders.json";
 
     public static List<Reminder> Load()
     {
+        if (!Directory.Exists(AppDataDir))
+            Directory.CreateDirectory(AppDataDir);
+
+        if (!File.Exists(FilePath) && File.Exists(DefaultRemindersPath))
+        {
+            File.Copy(DefaultRemindersPath, FilePath);
+        }
+
         if (!File.Exists(FilePath))
             return new List<Reminder>();
 
         string json = File.ReadAllText(FilePath);
-        return JsonConvert.DeserializeObject<List<Reminder>>(json);
+        return JsonConvert.DeserializeObject<List<Reminder>>(json) ?? new List<Reminder>();
     }
 
     public static void Save(List<Reminder> reminders)
@@ -44,11 +56,11 @@ public static class ReminderStorage
 
         if (existing != null)
         {
-            // Bu örnekte sadece IsCompleted güncelleniyor, istersen diğer alanları da güncelleyebilirsin
             existing.IsCompleted = updatedReminder.IsCompleted;
             Save(reminders);
         }
     }
+
     public static void Delete(Reminder reminderToDelete)
     {
         var reminders = Load();
@@ -64,24 +76,18 @@ public static class ReminderStorage
             Save(reminders);
         }
     }
+
     public static void UpdateCompletedReminders()
     {
-        // Tüm hatırlatıcıları al
-        var reminders = ReminderStorage.GetAll();  // Bu fonksiyon, hatırlatıcıları JSON'dan alır
+        var reminders = GetAll();
 
         foreach (var reminder in reminders)
         {
-            // Eğer hatırlatıcı süresi geçmişse, tamamlanmış olarak işaretle
             if (reminder.DateTime < DateTime.Now)
             {
                 reminder.IsCompleted = true;
-                
-                // ReminderStorage içinde güncelle
-                ReminderStorage.Update(reminder);
+                Update(reminder);
             }
         }
     }
-
-
-
 }

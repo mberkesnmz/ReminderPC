@@ -50,12 +50,12 @@
             // 
             // datePicker
             // 
-            this.datePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.datePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datePicker.BackColor = System.Drawing.Color.Transparent;
             this.datePicker.BorderRadius = 5;
             this.datePicker.BorderThickness = 1;
+            this.datePicker.Checked = true;
             this.datePicker.FillColor = System.Drawing.Color.Gainsboro;
             this.datePicker.Font = new System.Drawing.Font("LEMON MILK Medium", 7.25F, System.Drawing.FontStyle.Bold);
             this.datePicker.ForeColor = System.Drawing.Color.Black;
@@ -78,8 +78,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BorderRadius = 15;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -100,6 +99,8 @@
             // 
             // txtTitle
             // 
+            this.txtTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTitle.DefaultText = "";
             this.txtTitle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -117,12 +118,12 @@
             // 
             // timePicker
             // 
-            this.timePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.timePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.timePicker.BackColor = System.Drawing.Color.Transparent;
             this.timePicker.BorderRadius = 5;
             this.timePicker.BorderThickness = 1;
+            this.timePicker.Checked = true;
             this.timePicker.CustomFormat = "HH:mm";
             this.timePicker.FillColor = System.Drawing.Color.Gainsboro;
             this.timePicker.FocusedColor = System.Drawing.Color.Transparent;
@@ -149,6 +150,8 @@
             // 
             // txtDescription
             // 
+            this.txtDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescription.DefaultText = "";
             this.txtDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -204,8 +207,9 @@
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.btnAdd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddForm";
-            this.Text = "Form1";
+            this.Text = "Reminder";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

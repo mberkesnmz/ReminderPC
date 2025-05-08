@@ -79,6 +79,8 @@
             // 
             // flowLayoutPanelThemes
             // 
+            this.flowLayoutPanelThemes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanelThemes.Location = new System.Drawing.Point(36, 129);
             this.flowLayoutPanelThemes.Name = "flowLayoutPanelThemes";
             this.flowLayoutPanelThemes.Size = new System.Drawing.Size(317, 190);
@@ -106,8 +108,7 @@
             // 
             // btnChangeNotificationSound
             // 
-            this.btnChangeNotificationSound.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnChangeNotificationSound.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChangeNotificationSound.BorderRadius = 15;
             this.btnChangeNotificationSound.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -128,8 +129,7 @@
             // 
             // btnUseDefaultSound
             // 
-            this.btnUseDefaultSound.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnUseDefaultSound.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUseDefaultSound.BorderRadius = 15;
             this.btnUseDefaultSound.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -174,8 +174,9 @@
             this.Controls.Add(this.settingslbl);
             this.Controls.Add(this.closebutton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingsForm";
-            this.Text = "Form1";
+            this.Text = "Reminder";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

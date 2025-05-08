@@ -143,8 +143,9 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnOpenAddForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddReminderForm";
-            this.Text = "Form1";
+            this.Text = "Reminder";
             this.Load += new System.EventHandler(this.AddReminderForm_Load);
             this.ResumeLayout(false);
 

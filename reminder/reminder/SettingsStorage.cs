@@ -1,19 +1,27 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace reminder
 {
     public static class SettingsStorage
     {
-        private static readonly string FilePath = "settings.json";
+        private static readonly string AppDataDir = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "ReminderApp");
+
+        private static readonly string FilePath = Path.Combine(AppDataDir, "settings.json");
+        private static readonly string DefaultSettingsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.json");
 
         public static AppSettings Load()
         {
+            if (!Directory.Exists(AppDataDir))
+                Directory.CreateDirectory(AppDataDir);
+
+            if (!File.Exists(FilePath) && File.Exists(DefaultSettingsPath))
+            {
+                File.Copy(DefaultSettingsPath, FilePath);
+            }
 
             if (!File.Exists(FilePath))
                 return new AppSettings();
@@ -21,13 +29,16 @@ namespace reminder
             string json = File.ReadAllText(FilePath);
 
             if (string.IsNullOrWhiteSpace(json))
-                return new AppSettings(); // dosya boşsa da varsayılan ayarlar döndür
+                return new AppSettings();
 
-            return JsonConvert.DeserializeObject<AppSettings>(json);
+            return JsonConvert.DeserializeObject<AppSettings>(json) ?? new AppSettings();
         }
 
         public static void Save(AppSettings settings)
         {
+            if (!Directory.Exists(AppDataDir))
+                Directory.CreateDirectory(AppDataDir);
+
             string json = JsonConvert.SerializeObject(settings, Formatting.Indented);
             File.WriteAllText(FilePath, json);
         }
