@@ -1,7 +1,8 @@
 # 🕑 **Reminders App**
 - Visually customizable Windows Forms application to help you stay on top of your tasks and events.
   
-![image](https://github.com/user-attachments/assets/e11de0d4-7bfb-4a74-ade6-4085bf3d4a39)
+![image](https://github.com/user-attachments/assets/029b3d20-409b-4ffc-bb85-e709492185f1)
+
 
 Features:
 * 🌀 Shake animation when a reminder is due
